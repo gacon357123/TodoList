@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+
+.product-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color : #333;
+    background-color: white;
+    margin-top: 50px;
+    .content-left{
+        width: 50%;
+
+        .img-up img{
+            width: 300px;
+            height: 300px;
+        }
+
+        .img-down {
+            display: flex;
+            gap: 10px;
+
+            .img-small{
+                padding-top: 10px;
+                .select{
+                    border: 1px solid darkblue;
+                }
+                img{
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 3px;
+                    cursor: pointer;
+                }
+                
+            }
+        }
+    }
+    .content-right{
+        width: 50%;
+        .Title {
+            text-align: left;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px 0;
+        }
+
+        .Price {
+            font-size: 23px;
+            font-weight: 700;
+            padding: 5px 0 15px 0;
+            letter-spacing: 4px;
+            color: #ff3945;
+            background-color: #fafafa;
+        }
+
+        .Size{
+            padding: 5px 0;
+        }
+
+        .Action{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .quantity{
+                padding: 15px 0 0 0;
+            }
+
+            input{
+                border: none;
+                outline: none;
+                height: 25px;
+                width: 40px;
+                border-radius: 3px;
+                text-align: center;
+            }
+
+            button.buy{
+                background-color: #ff3945;
+                border: none;
+                outline: none;
+                border-radius: 3px;
+                height: 30px;
+                width: 60%;
+                color: white;
+            }
+            button.buy:hover{
+                background-color: #ca1723;
+            }
+        }
+    }
+}
